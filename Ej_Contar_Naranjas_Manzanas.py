@@ -21,7 +21,7 @@ def countApplesAndOranges(s, t, a, b, apples, oranges):
         d = random.randint(-(b-a),b-a) # distancia del manzano a la que cae la manzana
         # digamos que la distancia máxima a la que puede caer la manzana es el naranjo
         pos_manzana = a + d # posición global
-        print('posicion manzana:',pos_manzana)
+        # print('posicion manzana:',pos_manzana)
         if pos_manzana >= s and pos_manzana <= t: #si la manzana cae en el segmento de la casa
             manzanas_en_casa += 1  
     else:
@@ -40,8 +40,19 @@ def countApplesAndOranges(s, t, a, b, apples, oranges):
     
     return (manzanas_en_casa,naranjas_en_casa)
 
+def juego_manzanas_naranjas():
+    a = int(input('Introduce la posición del manzano: '))
+    b = int(input('Introduce la posición del naranjo: '))
+    s = int(input('Introduce la posición en la que empiza la casa de Sam: '))
+    t = int(input('Introduce la posición en la que termina la casa de Sam: '))
+    apples = int(input('Introduce la cantidad de manzanas que van a caer: '))
+    oranges = int(input('Introduce la cantidad de naranjas que van a caer: '))
 
+    manzanas_Sam, naranjas_Sam = countApplesAndOranges(s, t, a, b, apples, oranges)
+    print('Han caído',manzanas_Sam, 'manzanas en casa de Sam')
+    print('Han caído',naranjas_Sam, 'naranjas en casa de Sam')
 
-# ---------- PROGRAMA PRINCIPAL
-   
+# ---------- PROGRAMA PRINCIPAL ----------
+if __name__ == '__main__':
+    juego_manzanas_naranjas()
 
