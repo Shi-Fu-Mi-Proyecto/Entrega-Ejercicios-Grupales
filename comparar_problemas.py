@@ -35,7 +35,8 @@ for i in range(3):
         carlos += 1
     elif a[i] == b[i]:
         pass
-print ("resultado de Lucia es" , lucia, "resultado de Carlos es" ,carlos)
+p
+print ("puntuacion de Lucia es: " , lucia, "puntuacion de Carlos es: " ,carlos)
 if carlos < lucia:
     print ("Lucia es la ganadora")
 elif carlos > lucia:
