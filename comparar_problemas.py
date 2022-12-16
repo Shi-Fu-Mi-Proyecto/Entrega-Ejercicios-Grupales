@@ -11,36 +11,70 @@ import sys
 # The function accepts following parameters:
 # 1. INTEGER_ARRAY a
 # 2. INTEGER_ARRAY b
-#
+
+def calif_media_aleat(a):
+    '''
+    Funcion que dado un numero, devuleve un triplete de numeros aleatorios cuya media es el número dado
+    '''
+    while True:
+        trio = [random.randint(1, 100) for i in range(3)]
+        if sum(trio)/3 == a:
+            return trio
+        else:
+            pass
+
 def compareTriplets(a, b):
-# Write your code here
-    if __name__ == '__main__':
-        fptr = open(os.environ['OUTPUT_PATH'], 'w')
-        a = list(map(int, input().rstrip().split()))
-        b = list(map(int, input().rstrip().split()))
-        result = compareTriplets(a, b)
-        fptr.write(' '.join(map(str, result)))
-        fptr.write('\n')
-        fptr.close()
+    '''
+    Función que dada la calificación los desafíos de Lucía y Carlos, devuelve la puntuación de cada uno, tras la calificaión del revisor.
+    - INPUT:
+    a: int
+        calificación del desafío de Lucía (1-100)
+    b: int 
+        calificación del desafío de Carlos (1-100)
+    '''
+    puntos_a = calif_media_aleat(a) #lista de puntos en cada categoría de Lucía
+    # print('puntos Lucia',puntos_a)
+    puntos_b = calif_media_aleat(b) #lista de puntos en cada categoría de Carlos
+    # print('puntos Carlos',puntos_b)
+    lucia = 0 # puntuacion de lucia
+    carlos = 0  # puntuacion de carlos
 
-a = [ random.randint(1, 100) for i in range(3)]
-b = [ random.randint(1, 100) for i in range(3)]
-lucia = 0
-carlos = 0
+    # puntuamos para cada categoría
+    for i in range(3): 
+        if puntos_a[i] > puntos_b[i]: # Lucia tiene más puntos
+            lucia += 1
+        elif puntos_a[i] < puntos_b[i]: # Carlos tiene más puntos
+            carlos += 1
+        elif puntos_a[i] == puntos_b[i]: # tienen los mismos puntos
+            pass
+    
+    return lucia, carlos
 
-for i in range(3):
-    if a[i] > b[i]:
-        lucia += 1
-    elif a[i] < b[i]:
-        carlos += 1
-    elif a[i] == b[i]:
-        pass
-print ("puntuacion de Lucia es: " , lucia, "puntuacion de Carlos es: " ,carlos)
-if carlos < lucia:
-    print ("Lucia es la ganadora")
-elif carlos > lucia:
-    print ("Carlos es el ganador")
+def juego_comparacion():
+    a = int(input("Introduce la calificacion de Lucia: "))
+    b = int(input("Introduce la calificacion de Carlos: "))
+    lucia, carlos = compareTriplets(a, b)
+    print(lucia, carlos)
+    
+    if lucia > carlos:
+        print("Lucia gana")
+    elif lucia < carlos:
+        print("Carlos gana")
+    elif lucia == carlos:
+        print("Empate")
 
+
+#   PRGRAMA PRINCIPAL
+
+if __name__ == '__main__':
+    #fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    #a = list(map(int, input().rstrip().split()))
+    #b = list(map(int, input().rstrip().split()))
+    #result = compareTriplets(a, b)
+    #fptr.write(' '.join(map(str, result)))
+    #fptr.write('\n')
+    #fptr.close()
+    juego_comparacion()
 
 
     
