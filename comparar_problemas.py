@@ -22,3 +22,16 @@ def compareTriplets(a, b):
         fptr.write(' '.join(map(str, result)))
         fptr.write('\n')
         fptr.close()
+a = random.randint (1, 100)
+b = random.randint (1, 100)
+lucia = 0
+maria = 0
+for i in range(3):
+    if a[i] > b[i]:
+        lucia += 1
+    elif a[i] < b[i]:
+        maria += 1
+    elif a 
+
+
+    
