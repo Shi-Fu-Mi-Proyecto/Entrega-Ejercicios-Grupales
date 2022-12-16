@@ -35,7 +35,8 @@ for i in range(3):
         carlos += 1
     elif a[i] == b[i]:
         pass
-print (lucia, carlos)
+print ("resultado de Lucia es" , lucia, "resultado de Carlos es" ,carlos)
+
 
 
     
