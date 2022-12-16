@@ -1,29 +1,19 @@
 # ---------- IMPORTACIONES ----------
-import math
-import os
 import random
-import re
-import sys
-#
-# Complete the 'countApplesAndOranges' function below.
-#
-# The function accepts following parameters:
-# 1. INTEGER s
-# 2. INTEGER t
-# 3. INTEGER a
-# 4. INTEGER b
-# 5. INTEGER_ARRAY apples
-# 6. INTEGER_ARRAY oranges
-#
 
+# ---------- FUNCIONES ----------
 
 def countApplesAndOranges(s, t, a, b, apples, oranges):
     '''
-    -INPUT:
+    -INPUT-----:
     s (int): inicio del segmento de la casa
     t (int): fin del segmento de la casa
     a (int): ubicacion manzano
     b (int): ubicacion naranjo
+    apples (int): cantidad de manzanas
+    oranges (int): cantidad de naranjas
+    -OUTPUT-----:
+    (int,int): cantidad de manzanas y naranjas que caen en el segmento de la casa
     '''
     # MANZANAS
     manzanas_en_casa = 0
