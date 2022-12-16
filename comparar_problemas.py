@@ -54,8 +54,8 @@ def juego_comparacion():
     a = int(input("Introduce la calificacion de Lucia: "))
     b = int(input("Introduce la calificacion de Carlos: "))
     lucia, carlos = compareTriplets(a, b)
-    print(lucia, carlos)
-    
+    print("la ountuacion de Lucia es: ", lucia, " y la de Carlos es: ", carlos) 
+
     if lucia > carlos:
         print("Lucia gana")
     elif lucia < carlos:
