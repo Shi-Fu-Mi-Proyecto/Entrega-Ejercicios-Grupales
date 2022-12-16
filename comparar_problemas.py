@@ -1,4 +1,4 @@
-#!/bin/python3
+#("!"/bin/python3
 import math
 import os
 import random
@@ -31,7 +31,11 @@ for i in range(3):
         lucia += 1
     elif a[i] < b[i]:
         maria += 1
-    elif a 
+    elif a[i] == b[i]:
+        pass
+int[a] = lucia
+int[b] = maria
+print (lucia, maria)
 
 
     
