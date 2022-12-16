@@ -35,8 +35,6 @@ for i in range(3):
         carlos += 1
     elif a[i] == b[i]:
         pass
-[a] = lucia
-[b] = carlos
 print (lucia, carlos)
 
 
