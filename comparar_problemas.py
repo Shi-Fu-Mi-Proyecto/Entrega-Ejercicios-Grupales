@@ -24,8 +24,8 @@ def compareTriplets(a, b):
         fptr.close()
 a = random.randint (1, 100)
 b = random.randint (1, 100)
-lucia = 0
-Carlos = 0
+lucia = int()
+Carlos = int()
 for i in range(3):
     if a[i] > b[i]:
         lucia += 1
@@ -33,8 +33,8 @@ for i in range(3):
         Carlos += 1
     elif a[i] == b[i]:
         pass
-int[a] = lucia
-int[b] = Carlos
+[a] = lucia
+[b] = Carlos
 print (lucia, Carlos)
 
 
