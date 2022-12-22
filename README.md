@@ -11,6 +11,8 @@ Lucía y Carlos crearon cada uno un problema, un revisor califica los dos proble
 ***Descripción***:  
 La casa de Sam tiene un manzano y un naranjo que dan frutos en abundancia. Determine la cantidad de manzanas y naranjas que aterrizan en la casa de Sam, según el diagrama proporcionado.  
   
+<img width="394" alt="MANZANA-NARANJA" src="https://user-images.githubusercontent.com/114655698/209229021-a49080ce-3146-4d53-9980-248fbe7bdb71.png">  
+  
 ***Ejecución***: EJ2_MANZANAS_NARANJAS/main02.py
 
 ## EJ 3: Escalera
@@ -29,4 +31,6 @@ Cuando Alef está en cualquier celda, puede elegir al azar y con la misma probab
 Su tarea es escribir un programa que calcule e imprima una probabilidad de que Alef escape del
 laberinto.  
   
-***Ejecución***: EJ4_RANA_LABERINTO/main04.py
+***Ejecución***: EJ4_RANA_LABERINTO/main04.py  
+  
+COMENTARIO: no hemos podido terminar el ejercicio 4 de la rana en el laberinto. Está planteado todo el proceso del movimiento de la rana hasta que pueda salir del laberinto, pero no sabemos por qué nos da un error de tipo objeto, que si pudiésemos comentar contigo para ver cómo se podría solucionar, agradeceríamos.
