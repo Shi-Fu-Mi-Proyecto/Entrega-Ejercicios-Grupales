@@ -1,4 +1,6 @@
-# Módulo con las funciones del ejercicio 3: 'Escalera'
+'''
+Módulo con las funciones del ejercicio 3: 'Escalera'
+'''
 
 def escalera(n):
     '''
