@@ -1,6 +1,7 @@
 link repositorio: https://github.com/Shi-Fu-Mi-Proyecto/Entrega-Ejercicios-Grupales
 # ENTREGA EJERCICIOS GRUPALES
-
+COMENTARIO: no hemos podido terminar el ejercicio 4 de la rana en el laberinto. Está planteado todo el proceso del movimiento de la rana hasta que pueda salir del laberinto, pero no sabemos por qué nos da un error de tipo objeto, que si pudiésemos comentar contigo para ver cómo se podría solucionar, agradeceríamos.  
+  
 ## EJ 1: Compara los Problemas
 ***Descripción***:  
 Lucía y Carlos crearon cada uno un problema, un revisor califica los dos problemas, otorgandoles puntos en una escala del 1 al 100 para tres categorías: claridad del problema, originalidad y dificultad. La tarea consiste en comparar a Lucía y a Carlos en cada categoría, según quién haya obtenido mayor calificación por el revisor. El que mejor lo haya hecho en más cateogrías, es el ganador de la comparación. 
@@ -32,5 +33,3 @@ Su tarea es escribir un programa que calcule e imprima una probabilidad de que A
 laberinto.  
   
 ***Ejecución***: EJ4_RANA_LABERINTO/main04.py  
-  
-COMENTARIO: no hemos podido terminar el ejercicio 4 de la rana en el laberinto. Está planteado todo el proceso del movimiento de la rana hasta que pueda salir del laberinto, pero no sabemos por qué nos da un error de tipo objeto, que si pudiésemos comentar contigo para ver cómo se podría solucionar, agradeceríamos.
