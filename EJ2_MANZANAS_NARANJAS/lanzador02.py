@@ -50,6 +50,7 @@ def juego_manzanas_naranjas():
     '''
     Funcion lanzadora del juego
     '''
+    print('Según el diagrama del ejercicio:')
     a = int(input('Introduce la posición del manzano: '))
     b = int(input('Introduce la posición del naranjo: '))
     s = int(input('Introduce la posición en la que empiza la casa de Sam: '))
