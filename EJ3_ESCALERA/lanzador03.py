@@ -14,4 +14,4 @@ def dibujo_escalera():
     Función que pide el número de pisos para la escalera
     '''
     altura = int(input("Introduce el número de pisos de la escalera: "))
-    return escalera(altura)
+    print(escalera(altura))
