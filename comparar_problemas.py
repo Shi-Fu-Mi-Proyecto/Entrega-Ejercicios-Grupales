@@ -28,3 +28,19 @@ def compareTriplets(a, b):
     
     return lucia, carlos
 
+
+def juego_comparacion():
+    valores_a = input('Introduce las calificaciones de Lucia en las 3 categorías (separadas por espacios): ')
+    valores_b = input('Introduce las calificaciones de Carlos en las 3 categorías (separadas por espacios): ')
+    a = list(map(int, valores_a.split()))
+    b = list(map(int, valores_b.split()))
+    lucia, carlos = compareTriplets(a, b)
+    print("La puntuacion de Lucia es:", lucia, ", y la de Carlos es:", carlos) 
+    
+    # indicamos el ganador
+    if lucia > carlos:
+        print("Lucia gana")
+    elif lucia < carlos:
+        print("Carlos gana")
+    elif lucia == carlos:
+        print("Empate")
