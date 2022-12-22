@@ -14,3 +14,7 @@ def compareTriplets(a, b):
     (lucia, carlos): tuple
         puntuación de Lucía y puntuacion de Carlos
     ''' 
+    lucia = 0 # puntuacion de lucia
+    carlos = 0  # puntuacion de carlos
+
+   
