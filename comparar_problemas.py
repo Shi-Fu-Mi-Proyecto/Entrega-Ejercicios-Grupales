@@ -17,4 +17,14 @@ def compareTriplets(a, b):
     lucia = 0 # puntuacion de lucia
     carlos = 0  # puntuacion de carlos
 
-   
+    # puntuamos para cada categoría
+    for i in range(3): 
+        if a[i] > b[i]: # Lucia tiene más puntos
+            lucia += 1
+        elif a[i] < b[i]: # Carlos tiene más puntos
+            carlos += 1
+        elif a[i] == b[i]: # tienen los mismos puntos
+            pass
+    
+    return lucia, carlos
+
