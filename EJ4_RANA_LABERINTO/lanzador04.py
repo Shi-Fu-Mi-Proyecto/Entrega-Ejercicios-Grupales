@@ -1,8 +1,6 @@
 # ---------- IMPORTACIONES ----------
 from data04.lab import laberinto_inicial
 from modulos04.movimientos import imprimir_laberinto, moverse_a_celda_adyacente
-import random
-import sys
 
 # ---------- VARIABLES ----------
 MOVIMIENTOS = [] #lista donde vamos a ir guardando los movimientos que hace la rana
