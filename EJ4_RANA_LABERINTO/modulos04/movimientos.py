@@ -70,10 +70,11 @@ def mov_segun_tipo_celda(lab, pos_inicial, pos_final):
     # CELDA VACÍA
     if lab[f_1][c_1] == ' ': # si en la casilla donde vamos hay una casilla vacia
         
-        if lab[f_0][c_0] == 'o' or lab[f_0][c_0] == 'O': # si la rana acaba de salir de un túnel
+        # si la rana acaba de salir de un túnel, al moverse hay que reemplazar la casilla en la que estaba con una de tipo túnel
+        if (f_0,c_0) == (1,3) or (f_0,c_0) == (5,1) or (f_0,c_0) == (1,5) or (f_0,c_0) == (3,5): 
             reemplazar_en_caso_tunel(lab, pos_inicial, pos_final)
         
-        else: 
+        else: # si la rana viene de una casilla normal
             lab[f_1][c_1] = 'A' # movemos la rana a la casilla
             lab[f_0][c_0] = ' ' # dejamos la otra vacia
             return lab
